@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/result_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_blue"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="425dp"
+        android:layout_height="70dp"
+        android:background="#03A9F4"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="My App"
+        app:titleTextAppearance="@style/Toolbar.TitleItalic"
+        app:titleTextColor="@color/white"
+        tools:ignore="VisualLintBounds" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="425dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="VisualLintBounds">
+
+        <TextView
+            android:id="@+id/congratsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/congratulation"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/overall_score"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="425dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:ignore="VisualLintBounds">
+
+        <Button
+            android:id="@+id/resetButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#1976D2"
+            android:text="@string/play_again"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/exitButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:backgroundTint="#1976D2"
+            android:text="@string/exit"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

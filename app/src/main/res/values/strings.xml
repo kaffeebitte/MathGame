@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MathGame</string>
+    <string name="addition">Addition</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="ok">OK</string>
+    <string name="score">Score:</string>
+    <string name="life">Life:</string>
+    <string name="timer">Timer:</string>
+    <string name="time_value">60</string>
+    <string name="score_value">0</string>
+    <string name="life_value">3</string>
+    <string name="question">Question</string>
+    <string name="answer_hint">Please write your answer</string>
+    <string name="next_question">Next question</string>
+    <string name="play_again">Play again</string>
+    <string name="exit">Exit</string>
+    <string name="overall_score">Score: 20</string>
+    <string name="congratulation">Congratulations!</string>
+</resources>
